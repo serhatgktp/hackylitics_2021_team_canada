@@ -6,6 +6,7 @@ public class Player {
   private String nationality;
   private ArrayList<Integer> points;
   private ArrayList<Integer> years;
+  private int ptsIncrease;
   
   public Player(String title)
       //, String nation, ArrayList<Integer> points, ArrayList<Integer> years
@@ -28,6 +29,10 @@ public class Player {
     return name;
   }
   
+  public String getNationality() {
+    return nationality;
+  }
+  
   public void setName(String title) {
     name=title;
   }
@@ -35,5 +40,20 @@ public class Player {
   public void setNationality(String title) {
     nationality=title;
   }
+  
+  public ArrayList<Integer> getYears(){
+    return years;
+  }
+  
+  public ArrayList<Integer> getPoints(){
+    return points;
+  }
 
+  public int getPtsIncrease() {
+    return ptsIncrease;
+  };
+  
+  public void setPtsIncrease(int num) {
+    ptsIncrease = num;
+  }
 }
