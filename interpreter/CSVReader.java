@@ -37,13 +37,21 @@ public void readCSV(String path) {
     e.printStackTrace();
   }  
   sc.useDelimiter(",");   //sets the delimiter pattern  
+  String temp = ((path.split("_")[1]));
+  int year = Integer.parseInt(temp.split(".c")[0]);
   while (sc.hasNext())  //returns a boolean value  
   { 
-    String name = new String();
-    name = sc.next();  //find and returns the next complete token from this scanner  
+    String name = sc.next();  //find and returns the next complete token from this scanner  
     Player newPlayer = new Player(name);
-    playerList.add(newPlayer);
-
+    String nat = sc.next();
+    newPlayer.setNationality(nat);
+    int pts = sc.nextInt();
+    newPlayer.addPoints(pts);
+    newPlayer.addYear(year);
+    if(name.strip()!="") {
+      playerList.add(newPlayer);
+    }
+    else {newPlayer=null; System.out.println("Junk freed!");}
   }   
   sc.close();  //closes the scanner  
 
