@@ -1,3 +1,0 @@
-This document is for taking notes.
-Primary key: first and lastname, plus nationality
-Parameters: Win/Lose record, 
