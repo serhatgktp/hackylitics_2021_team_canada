@@ -8,7 +8,7 @@ public class JShell {
     // TODO Auto-generated method stub
     CSVReader List1 = new CSVReader();
     
-    List1.importCSV("Rankings_2021.csv");
+    List1.importCSV("Sample_Rankings_2021.csv");
     PotentialList potentials = new PotentialList();
     potentials.addAllPlayers(List1.getPlayerList());
 
