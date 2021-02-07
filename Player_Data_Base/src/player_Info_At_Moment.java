@@ -3,8 +3,8 @@ public class player_Info_At_Moment {
 	
 	
 	private final int ranking;
-	private final int age;
-	private final String date;
+	protected final int age;
+	protected final String date;
 	protected final double date_Formula;
 	
 	public player_Info_At_Moment( int ranking,
@@ -22,7 +22,7 @@ public class player_Info_At_Moment {
 		double value = 0;
 		String temp[];
 		temp = date.split(",");
-		value = (double) Integer.parseInt(temp[0]) * 10.0 + 
+		value = (double) Integer.parseInt(temp[0]) * 100.0 + 
 				(double) Integer.parseInt(temp[1]) + 
 				(double) Integer.parseInt(temp[2])/100.0;
 		return value;

@@ -7,6 +7,8 @@ public class main {
 		// last name and nationality
 		HashMap<String, player_Total_Info> 
 			player_Database = new HashMap<String,player_Total_Info >();
-				}
+				
 
+
+	}
 }
