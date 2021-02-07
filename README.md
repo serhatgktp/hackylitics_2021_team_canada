@@ -23,8 +23,9 @@ This data is then put through an algorithm that determines the players who have 
 and estimates which players would be the best to recruit.
 
 # Challenges
-As our time was limited and all our findings were limited to Google searches, we decided to start only with points and ranking.
-This will demonstrate to the jury that if the necessary data is provided to us, we can take it further and add many more parameters to our algorithm.
+As our time was limited and all our findings were limited to Google searches, we decided to start only with points as a parameter.
+We hope that our work demonstrates to the jury that if the necessary data is provided to us, we can take it further and add many more parameters to our algorithm
+to create a more detailed and powerful head-hunting tool.
 
 # What's next?
 We have discussed as a team, and decided that once we are able to access the respective data
