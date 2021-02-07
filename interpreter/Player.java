@@ -4,7 +4,7 @@ public class Player {
   
   private String name;
   private String nationality;
-  private ArrayList<String> points;
+  private ArrayList<Integer> points;
   private ArrayList<Integer> years;
   
   public Player(String title)
@@ -20,7 +20,7 @@ public class Player {
     years.add(year);
   }
 
-  public void addPoints(String points) {
+  public void addPoints(int points) {
     this.points.add(points);
   }
 
