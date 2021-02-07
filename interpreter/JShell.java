@@ -23,7 +23,7 @@ public class JShell {
     PotentialList potentials = new PotentialList();
     potentials.addAllPlayers(List1.getPlayerList());
     HashMap<String, Integer> comparisonMap = new HashMap<String, Integer>();
-    initMap(comparisonMap, potentials.getAllPlayers());
+    initMap(comparisonMap, List2.getPlayerList());
 
     potentials.determineImprovement(comparisonMap);  // Determines how players have improved within the given
                                         // time span
