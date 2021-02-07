@@ -27,7 +27,7 @@ public void printCSV(String path) {
   sc.close();  //closes the scanner  
   }
 
-public void readCSV(String path) {
+public void importCSV(String path) {
   
   Scanner sc = null;
   try {
@@ -35,7 +35,7 @@ public void readCSV(String path) {
   } catch (FileNotFoundException e) {
     // TODO Auto-generated catch block
     e.printStackTrace();
-  }  
+  }
   sc.useDelimiter(",");   //sets the delimiter pattern  
   String temp = ((path.split("_")[1]));
   int year = Integer.parseInt(temp.split(".c")[0]);
@@ -51,7 +51,7 @@ public void readCSV(String path) {
     if(name.strip()!="") {
       playerList.add(newPlayer);
     }
-    else {newPlayer=null; System.out.println("Junk freed!");}
+    else {newPlayer=null;}
   }   
   sc.close();  //closes the scanner  
 

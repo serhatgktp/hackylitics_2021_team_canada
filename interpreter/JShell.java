@@ -6,18 +6,19 @@ public class JShell {
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
-    CSVReader List = new CSVReader();
+    CSVReader List1 = new CSVReader();
     
-    List.readCSV("Rankings_2021.csv");
-    
-    int i=0;
-    
-    while(i < List.getPlayerList().size()) {
-      System.out.println(List.getPlayerList().get(i).getName());
-      i++;
+    List1.importCSV("Rankings_2021.csv");
+    PotentialList potentials = new PotentialList();
+    potentials.addAllPlayers(List1.getPlayerList());
+
+    potentials.determineImprovement();  // Determines how players have improved within the given
+                                        // time span
+    potentials.populateStarList();      // Populates an empty list with potential big-ballers
+    potentials.printStarList();         // Print the list of players that are expected to make it
+                                        // big! This is the end product!
+
     }
     
     
   }
-
-}

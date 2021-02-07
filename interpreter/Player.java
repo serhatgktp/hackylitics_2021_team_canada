@@ -2,11 +2,11 @@ package interpreter;
 import java.util.ArrayList;
 public class Player {
   
-  private String name;
-  private String nationality;
+  private String name="";
+  private String nationality="";
   private ArrayList<Integer> points;
   private ArrayList<Integer> years;
-  private int ptsIncrease;
+  private int ptsIncrease=0;
   
   public Player(String title)
       //, String nation, ArrayList<Integer> points, ArrayList<Integer> years
